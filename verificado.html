@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Estudante</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #AFDCCD;
+            color: #000;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1;
+        }
+
+        .header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 40px;
+            padding: 20px 10px;
+        }
+
+        .logo-dne {
+            height: 50px;
+            object-fit: contain;
+        }
+
+        .logo-ue {
+            height: 50px;
+            object-fit: contain;
+        }
+
+        .verification-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 30px;
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+
+        .verification-icon {
+            font-size: 80px;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        .verification-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .verification-message {
+            font-size: 16px;
+            color: #444;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+
+        .verification-datetime {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .footer-logo {
+            width: 140px;
+            max-width: 70%;
+        }
+
+        .back-button {
+            background-color: #FF7F50;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 12px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .back-button:hover {
+            background-color: #FF6347;
+        }
+
+        @media (max-width: 480px) {
+            .verification-card {
+                padding: 20px;
+            }
+
+            .verification-icon {
+                font-size: 60px;
+            }
+
+            .verification-title {
+                font-size: 20px;
+            }
+
+            .logo-dne, .logo-ue {
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="logo-dne-branco.webp" alt="DNE Logo" class="logo-dne">
+            <img src="logoazul.webp" alt="UE Logo" class="logo-ue">
+        </div>
+
+        <div class="verification-card">
+            <div class="verification-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h1 class="verification-title">Estudante verificado com sucesso!</h1>
+            <p class="verification-message">
+                A autenticidade desta carteira estudantil foi confirmada.
+                O documento é válido e está registrado no sistema DNE.
+            </p>
+            <div class="verification-datetime">
+                Verificado em: <span id="datetime"></span>
+            </div>
+            <a href="index.html" class="back-button">Voltar ao Início</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <img src="logo2.png" alt="UE Logo" class="footer-logo">
+    </div>
+
+    <script>
+        // Exibir data e hora atual
+        document.getElementById('datetime').textContent = new Date().toLocaleString('pt-BR');
+    </script>
+</body>
+</html> 

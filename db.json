@@ -1,0 +1,32 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Igor Milhomem Borba",
+      "institution": "Universidade Federal do Maranhão",
+      "course": "Engenharia de Software",
+      "level": "Graduação",
+      "cpf": "038.846.321-08",
+      "rg": "076419882022-5",
+      "registration": "2026001",
+      "birth": "2003-09-15",
+      "validity": "2027-03",
+      "photoData": "igor.png",
+      "codeUse": "IMB-2026A"
+    },
+    {
+      "id": 2,
+      "name": "Juliana Felix Arnal Saez",
+      "institution": "Universidade Federal de Curitiba",
+      "course": "Administração",
+      "level": "Graduação",
+      "cpf": "103.324.949-18",
+      "rg": "12.345.678-9",
+      "registration": "2026002",
+      "birth": "2002-04-22",
+      "validity": "2027-03",
+      "photoData": "julia.png",
+      "codeUse": "JFS-2026B"
+    }
+  ]
+}
