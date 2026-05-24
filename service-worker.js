@@ -1,15 +1,15 @@
-const CACHE_NAME = 'dne-app-v4';
+const CACHE_NAME = 'dne-app-v5';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/style.css',
-  '/script.js',
-  '/logo-dne-branco.webp',
-  '/logoazul.webp',
-  '/icon-192x192.png',
-  '/icon-512x512.png',
-  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css',
-  'https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js'
+  './',
+  './index.html',
+  './style.css',
+  './script.js',
+  './logo.png',
+  './logo2.png',
+  './logo-dne-branco.webp',
+  './logoazul.webp',
+  './qrcode.svg',
+  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'
 ];
 
 // Instalação do Service Worker

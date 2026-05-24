@@ -2,7 +2,7 @@
   "name": "Carteira de Estudante DNE",
   "short_name": "DNE",
   "description": "Carteira Nacional de Estudante Digital",
-  "start_url": "/index.html",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#AFDCCD",
   "theme_color": "#AFDCCD",
